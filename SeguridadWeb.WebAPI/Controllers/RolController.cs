@@ -81,7 +81,7 @@ namespace SeguridadWeb.WebAPI.Controllers
                 return BadRequest();
             }
         }
-
+        // POST api/Rol/Buscar
         [HttpPost("Buscar")]
         public async Task<List<Rol>> Buscar([FromBody] object pRol)
         {
