@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeguridadWeb.WebAPI", "Segu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeguridadWeb.AppBlazor", "SeguridadWeb.AppBlazor\SeguridadWeb.AppBlazor.csproj", "{10B4772A-1AED-4A24-9F1C-CA226421719C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeguridadWeb.MinimalAPI", "SeguridadWeb.MinimalAPI\SeguridadWeb.MinimalAPI.csproj", "{BB5C60DF-3ACB-40E0-8D14-CB5ACB310866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeguridadWeb.MinimalAPI", "SeguridadWeb.MinimalAPI\SeguridadWeb.MinimalAPI.csproj", "{BB5C60DF-3ACB-40E0-8D14-CB5ACB310866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeguridadWeb.BlazorPWA", "SeguridadWeb.BlazorPWA\SeguridadWeb.BlazorPWA.csproj", "{8444095F-F155-4339-951A-D4BBC57041CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{BB5C60DF-3ACB-40E0-8D14-CB5ACB310866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB5C60DF-3ACB-40E0-8D14-CB5ACB310866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB5C60DF-3ACB-40E0-8D14-CB5ACB310866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8444095F-F155-4339-951A-D4BBC57041CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8444095F-F155-4339-951A-D4BBC57041CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8444095F-F155-4339-951A-D4BBC57041CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8444095F-F155-4339-951A-D4BBC57041CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
