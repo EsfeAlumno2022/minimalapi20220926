@@ -25,6 +25,7 @@ namespace SeguridadWeb.WebAPI.Controllers
         }
         //************************************************
         // GET: api/<UsuarioController>
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IEnumerable<Usuario>> Get()
         {

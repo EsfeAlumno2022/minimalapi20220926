@@ -1,0 +1,42 @@
+﻿@page "/usuarios"
+@inject HttpClient Http
+@using SeguridadWeb.EntidadesDeNegocio
+
+@if (usuarios == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Login</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in usuarios)
+            {
+                <tr>
+                    <td>@usuario.Id</td>
+                    <td>@usuario.Nombre</td>
+                    <td>@usuario.Apellido</td>
+                    <td>@usuario.Login</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Usuario[]? usuarios;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // https://localhost:44370/api/Rol
+        usuarios = await Http.GetFromJsonAsync<Usuario[]>("Usuario");
+    }
+}
